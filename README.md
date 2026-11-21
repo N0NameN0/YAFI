@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/preview-list.png" alt="YAFI — file list view" width="100%">
+  <img src="docs/preview-list.png" alt="YAFI - file list view" width="100%">
 </p>
 
 <h1 align="center">YAFI</h1>
@@ -35,11 +35,11 @@
 
 ---
 
-**YAFI — Yet Another File Indexer** is a modern rewrite of the classic [snif](https://www.bitfolge.de/) 1.5.2 file browser. It turns any readable directory into a fast, good-looking file listing with natural sorting, instant search, thumbnails, an audio player and a pixel-perfect image viewer.
+**YAFI - Yet Another File Indexer** is a modern rewrite of the classic [snif](https://www.bitfolge.de/) 1.5.2 file browser. It turns any readable directory into a fast, good-looking file listing with natural sorting, instant search, thumbnails, an audio player and a pixel-perfect image viewer.
 
 **Repository:** <https://github.com/N0NameN0/YAFI>
 
-Yes, another file indexer — but this one is a single file, has no database, no Composer, no build step, no CDN and no tracking. Copy `index.php` into an existing directory and it is ready.
+Yes, another file indexer - but this one is a single file, has no database, no Composer, no build step, no CDN and no tracking. Copy `index.php` into an existing directory and it is ready.
 
 It is a good fit for:
 
@@ -68,7 +68,7 @@ The original snif was a clever single-file browser, but it predates modern PHP a
 | **Repository** | [github.com/N0NameN0/YAFI](https://github.com/N0NameN0/YAFI) |
 | **Application** | Single-file PHP file browser |
 | **Server** | PHP 8.1+; GD recommended for thumbnails |
-| **Storage** | Filesystem only — no database |
+| **Storage** | Filesystem only - no database |
 | **UI** | Dark / light / system, list / grid, responsive |
 | **Media** | Audio playlist, waveform, image gallery, 2000% zoom |
 | **i18n** | English by default; French and German selectable in config |
@@ -294,13 +294,13 @@ All settings are optional; the defaults are sensible for a general-purpose file 
 
 These keys remain for drop-in compatibility with old snif configurations but are not used by the current renderer:
 
-- `$hiddenFilesRegex` — the regex is built internally from `$hiddenFilesWildcards`.
-- `$useExternalImages` — reserved from the original snif icon system.
-- `$externalIcons` — reserved from the original snif icon system.
+- `$hiddenFilesRegex` - the regex is built internally from `$hiddenFilesWildcards`.
+- `$useExternalImages` - reserved from the original snif icon system.
+- `$externalIcons` - reserved from the original snif icon system.
 
 ## External configuration
 
-Keep local preferences out of the main file. Create a PHP file — preferably outside the public document root — and point `$externalConfig` at it:
+Keep local preferences out of the main file. Create a PHP file - preferably outside the public document root - and point `$externalConfig` at it:
 
 ```php
 // /etc/yafi/config.php
@@ -335,7 +335,7 @@ Demos	Demo executables and source files
 Music	Audio tracks
 Releases	Packaged builds
 neon-horizon.png	Neon horizon wallpaper
-soundtrack.mp3	Main theme — MP3
+soundtrack.mp3	Main theme - MP3
 .	Demo library for YAFI
 ```
 
@@ -417,7 +417,7 @@ Direct file links are served by the web server, not by PHP. Your server-level ac
 For public folders:
 
 ```apache
-# Apache example — protect the entire served directory
+# Apache example - protect the entire served directory
 AuthType Basic
 AuthName "Private files"
 AuthUserFile /etc/apache2/.htpasswd
@@ -464,7 +464,7 @@ $usePaging        = 250;   // paginate instead of generating every row
 $showDirItemCounts = false; // skip scanning every subdirectory
 ```
 
-Those two settings have the biggest impact. In a local PHP 8.4 test, a 2,000-entry listing rendered in roughly 20–25 ms; real-world numbers depend on storage, cache and PHP configuration.
+Those two settings have the biggest impact. In a local PHP 8.4 test, a 2,000-entry listing rendered in roughly 20-25 ms; real-world numbers depend on storage, cache and PHP configuration.
 
 ### Thumbnail cache
 
@@ -486,7 +486,7 @@ The cache is created with `0700` permissions, checked for symlinks and ownership
 | `?` | Open the keyboard shortcuts dialog |
 | `Esc` | Close a dialog / clear the search |
 | `←` `→` | Previous / next image in the viewer |
-| Mouse wheel | Zoom the image (100%–2000%) |
+| Mouse wheel | Zoom the image (100%-2000%) |
 | Drag | Pan a zoomed image |
 | Media keys | Play/pause/next/previous audio where the browser supports Media Session |
 
@@ -496,7 +496,7 @@ Shortcuts are ignored while typing in the search field or while a dialog is open
 
 Built-in languages:
 
-- English (`en`) — **default**
+- English (`en`) - **default**
 - French (`fr`)
 - German (`de`)
 
@@ -644,9 +644,9 @@ It is a derivative of **snif 1.5.2** by Kai Blankenhorn, which is distributed un
 
 ## Credits
 
-- **YAFI — Yet Another File Indexer** — Antoine Santo aka **N0NameN0** (2026 modernization).
-- **Repository** — [github.com/N0NameN0/YAFI](https://github.com/N0NameN0/YAFI).
-- **Original snif** — Kai Blankenhorn, [www.bitfolge.de](https://www.bitfolge.de/).
+- **YAFI - Yet Another File Indexer** - Antoine Santo aka **N0NameN0** (2026 modernization).
+- **Repository** - [github.com/N0NameN0/YAFI](https://github.com/N0NameN0/YAFI).
+- **Original snif** - Kai Blankenhorn, [www.bitfolge.de](https://www.bitfolge.de/).
 - Icons are hand-drawn inline SVG; no third-party icon pack is bundled.
 - Built with vanilla PHP, CSS and JavaScript. No framework, database, CDN or tracker.
 

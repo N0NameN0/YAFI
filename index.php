@@ -1,7 +1,7 @@
 <?php
 /***************************************************************************
  *
- *  YAFI — Yet Another File Indexer
+ *  YAFI - Yet Another File Indexer
  *  A modern, single-file PHP file browser with audio and image players.
  *
  *  Original snif 1.5.2 by Kai Blankenhorn (www.bitfolge.de)
@@ -1600,7 +1600,7 @@ $searchPlaceholder = $usePaging > 0 ? translate('Search this page...') : transla
 ?>
 <!DOCTYPE html>
 <!--
-  YAFI — Yet Another File Indexer
+  YAFI - Yet Another File Indexer
   Author / maintainer: Antoine Santo aka N0NameN0
   Original project: snif 1.5.2 by Kai Blankenhorn (www.bitfolge.de)
   License: GPL-2.0-or-later
@@ -1613,9 +1613,9 @@ $searchPlaceholder = $usePaging > 0 ? translate('Search this page...') : transla
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" id="themeColor" content="<?= $defaultTheme === 'light' ? '#f5f6fa' : '#08080d' ?>">
-<meta name="generator" content="YAFI <?= snifH($snifVersion) ?> — Yet Another File Indexer">
+<meta name="generator" content="YAFI <?= snifH($snifVersion) ?> - Yet Another File Indexer">
 <?php if (!$allowIndexing): ?><meta name="robots" content="noindex, nofollow"><?php endif; ?>
-<title><?= snifH($pageTitle) ?> &mdash; <?= snifH($snifServer) ?></title>
+<title><?= snifH($pageTitle) ?> - <?= snifH($snifServer) ?></title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238b93ff' d='M3 7.5A2.5 2.5 0 0 1 5.5 5H9l2 2h7.5A2.5 2.5 0 0 1 21 9.5v8A2.5 2.5 0 0 1 18.5 20h-13A2.5 2.5 0 0 1 3 17.5z'/%3E%3C/svg%3E">
 <script nonce="<?= snifH($snifNonce) ?>">
 (function () {
@@ -2489,7 +2489,7 @@ body.audio-open .toast { bottom: 128px; }
 
   <!-- Footer -->
   <footer class="footer">
-    <span>YAFI v<?= snifH($snifVersion) ?> — Yet Another File Indexer</span>
+    <span>YAFI v<?= snifH($snifVersion) ?> - Yet Another File Indexer</span>
     <span aria-hidden="true">&middot;</span>
     <a class="footer-link" href="https://github.com/N0NameN0/YAFI" target="_blank" rel="noopener noreferrer" title="https://github.com/N0NameN0/YAFI" aria-label="YAFI on GitHub">GitHub</a>
   </footer>
@@ -2506,7 +2506,7 @@ body.audio-open .toast { bottom: 128px; }
     </button>
     <button class="icon-btn" id="audioNext" type="button" aria-label="<?= snifH(translate('Next')) ?>" title="<?= snifH(translate('Next')) ?>"><?= snifUiIcon('next') ?></button>
     <div class="audio-track">
-      <span class="audio-track-name" id="trackName" aria-live="polite">&mdash;</span>
+      <span class="audio-track-name" id="trackName" aria-live="polite">-</span>
       <span class="audio-track-type" id="trackType"></span>
     </div>
     <div class="audio-progress">
@@ -2557,9 +2557,9 @@ body.audio-open .toast { bottom: 128px; }
   </dl>
   <div class="sheet-credits">
     <span class="sheet-credits-title"><?= snifH(translate('Credits')) ?></span>
-    <p><strong>YAFI v<?= snifH($snifVersion) ?></strong> — Yet Another File Indexer</p>
+    <p><strong>YAFI v<?= snifH($snifVersion) ?></strong> - Yet Another File Indexer</p>
     <p><?= snifH(translate('Created by')) ?> <strong>Antoine Santo aka N0NameN0</strong></p>
-    <p><?= snifH(translate('Based on')) ?> <strong>snif 1.5.2</strong> — Kai Blankenhorn</p>
+    <p><?= snifH(translate('Based on')) ?> <strong>snif 1.5.2</strong> - Kai Blankenhorn</p>
     <p class="sheet-license">GPL-2.0-or-later</p>
     <p class="sheet-repo"><a href="https://github.com/N0NameN0/YAFI" target="_blank" rel="noopener noreferrer">github.com/N0NameN0/YAFI</a></p>
   </div>
