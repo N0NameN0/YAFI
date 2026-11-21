@@ -1780,7 +1780,7 @@ body.dialog-open { overflow: hidden; }
 }
 .icon-btn:hover { background: var(--row-hover); border-color: var(--border-strong); color: var(--text); }
 .icon-btn:focus-visible, .btn:focus-visible, .file-link:focus-visible, .sort-link:focus-visible,
-.brand:focus-visible, .crumb:focus-visible, .pager-btn:focus-visible,
+.brand:focus-visible, .crumb:focus-visible, .pager-btn:focus-visible, .footer-link:focus-visible,
 input:focus-visible, .grid-item:focus-visible, .audio-play:focus-visible, .lightbox-nav:focus-visible,
 .track-play:focus-visible {
   outline: 2px solid var(--accent); outline-offset: 2px;
@@ -2026,6 +2026,8 @@ html[data-view="grid"] .view-grid { display: block; }
   display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap;
   padding: 20px 6px 8px; font-size: 11px; color: var(--dim);
 }
+.footer-link { color: var(--dim); text-decoration: none; }
+.footer-link:hover { color: var(--accent); text-decoration: underline; }
 
 /* ---- audio player ---- */
 .audio-player {
@@ -2163,7 +2165,10 @@ dialog::backdrop { background: rgba(4, 5, 10, 0.62); backdrop-filter: blur(4px);
 }
 .sheet-credits p { margin: 0; }
 .sheet-credits strong { color: var(--text); font-weight: 600; }
+.sheet-credits a { color: var(--accent); text-decoration: none; }
+.sheet-credits a:hover { text-decoration: underline; }
 .sheet-credits .sheet-license { margin-top: 4px; color: var(--dim); font-family: var(--font-mono); font-size: 10px; }
+.sheet-credits .sheet-repo { margin-top: 4px; font-family: var(--font-mono); font-size: 10px; }
 kbd {
   display: inline-block; min-width: 22px; padding: 1px 6px;
   border: 1px solid var(--border-strong); border-radius: 5px;
@@ -2485,6 +2490,8 @@ body.audio-open .toast { bottom: 128px; }
   <!-- Footer -->
   <footer class="footer">
     <span>YAFI v<?= snifH($snifVersion) ?> — Yet Another File Indexer</span>
+    <span aria-hidden="true">&middot;</span>
+    <a class="footer-link" href="https://github.com/N0NameN0/YAFI" target="_blank" rel="noopener noreferrer" title="https://github.com/N0NameN0/YAFI" aria-label="YAFI on GitHub">GitHub</a>
   </footer>
 </div>
 
@@ -2554,6 +2561,7 @@ body.audio-open .toast { bottom: 128px; }
     <p><?= snifH(translate('Created by')) ?> <strong>Antoine Santo aka N0NameN0</strong></p>
     <p><?= snifH(translate('Based on')) ?> <strong>snif 1.5.2</strong> — Kai Blankenhorn</p>
     <p class="sheet-license">GPL-2.0-or-later</p>
+    <p class="sheet-repo"><a href="https://github.com/N0NameN0/YAFI" target="_blank" rel="noopener noreferrer">github.com/N0NameN0/YAFI</a></p>
   </div>
 </dialog>
 

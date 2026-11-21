@@ -14,6 +14,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/N0NameN0/YAFI"><img src="https://img.shields.io/badge/GitHub-N0NameN0%2FYAFI-181717?logo=github&logoColor=white" alt="GitHub repository"></a>
   <a href="https://www.php.net/"><img src="https://img.shields.io/badge/PHP-8.1%2B-777BB4?logo=php&logoColor=white" alt="PHP 8.1+"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--2.0--or--later-blue" alt="License: GPL-2.0-or-later"></a>
   <img src="https://img.shields.io/badge/version-4.0-8b93ff" alt="Version 4.0">
@@ -23,6 +24,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/N0NameN0/YAFI">GitHub</a> ·
   <a href="#why-yafi">Why YAFI</a> ·
   <a href="#screenshots">Screenshots</a> ·
   <a href="#quick-start">Quick start</a> ·
@@ -34,6 +36,8 @@
 ---
 
 **YAFI — Yet Another File Indexer** is a modern rewrite of the classic [snif](https://www.bitfolge.de/) 1.5.2 file browser. It turns any readable directory into a fast, good-looking file listing with natural sorting, instant search, thumbnails, an audio player and a pixel-perfect image viewer.
+
+**Repository:** <https://github.com/N0NameN0/YAFI>
 
 Yes, another file indexer — but this one is a single file, has no database, no Composer, no build step, no CDN and no tracking. Copy `index.php` into an existing directory and it is ready.
 
@@ -61,6 +65,7 @@ The original snif was a clever single-file browser, but it predates modern PHP a
 
 | | |
 |---|---|
+| **Repository** | [github.com/N0NameN0/YAFI](https://github.com/N0NameN0/YAFI) |
 | **Application** | Single-file PHP file browser |
 | **Server** | PHP 8.1+; GD recommended for thumbnails |
 | **Storage** | Filesystem only — no database |
@@ -173,11 +178,15 @@ The original snif was a clever single-file browser, but it predates modern PHP a
 
 ## Quick start
 
-1. **Copy `index.php`** into the directory you want to expose.
+1. **Get `index.php`** from the repository and copy it into the directory you want to expose.
 
    ```bash
+   git clone https://github.com/N0NameN0/YAFI.git
+   cd YAFI
    cp index.php /srv/files/
    ```
+
+   You can also copy just [`index.php`](https://github.com/N0NameN0/YAFI/blob/main/index.php) if you do not want the README and screenshots.
 
 2. **Make sure PHP can read the directory** and, for thumbnails, write to the system temp directory (or configure `$thumbnailCacheDir`).
 
@@ -616,6 +625,7 @@ The HTML response intentionally uses `Cache-Control: private, no-store` because 
 
 Contributions, bug reports and security reports are welcome.
 
+- Source, issues and pull requests: [github.com/N0NameN0/YAFI](https://github.com/N0NameN0/YAFI)
 - Keep the application **single-file** and dependency-free at runtime.
 - Keep the existing configuration variable names where possible.
 - Preserve PHP 8.1+ compatibility.
@@ -635,6 +645,7 @@ It is a derivative of **snif 1.5.2** by Kai Blankenhorn, which is distributed un
 ## Credits
 
 - **YAFI — Yet Another File Indexer** — Antoine Santo aka **N0NameN0** (2026 modernization).
+- **Repository** — [github.com/N0NameN0/YAFI](https://github.com/N0NameN0/YAFI).
 - **Original snif** — Kai Blankenhorn, [www.bitfolge.de](https://www.bitfolge.de/).
 - Icons are hand-drawn inline SVG; no third-party icon pack is bundled.
 - Built with vanilla PHP, CSS and JavaScript. No framework, database, CDN or tracker.
